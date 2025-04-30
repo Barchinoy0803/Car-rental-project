@@ -1,0 +1,47 @@
+.rent__app__wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    .rent__app__details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 448px;
+        flex: 1;
+
+        .details__title {
+            @extend %title;
+        }
+
+        .details__description, .details__note{
+            font-family: $font-Poppins;
+            color: $text-color-primary;
+        }
+        .details__note {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 12px;
+            text-transform: uppercase;
+        }
+
+        .details__description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .details__form{
+            width: max-content;
+            display: flex;
+            align-items: center;
+            border: 1px solid $text-color-primary;
+            border-radius: 90px;
+
+            button{
+                padding-block: 16px;
+            }
+        }
+    }
+}
+

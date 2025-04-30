@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Rentals</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="header__navbar">
+                <div class="navbar__first__part">
+                    <div class="header__logo">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_9477_1298)">
+                                <path
+                                    d="M14.9027 1.19271C16.819 0.0863382 19.1799 0.0863377 21.0962 1.19271L31.0066 6.91444C32.9229 8.02081 34.1033 10.0655 34.1033 12.2782V23.7217C34.1033 25.9344 32.9229 27.9791 31.0066 29.0855L21.0962 34.8072C19.1799 35.9136 16.819 35.9136 14.9027 34.8072L4.99235 29.0855C3.07606 27.9791 1.89558 25.9344 1.89558 23.7217V12.2782C1.89558 10.0655 3.07606 8.02081 4.99235 6.91444L14.9027 1.19271Z"
+                                    fill="url(#paint0_linear_9477_1298)" />
+                                <mask id="mask0_9477_1298" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1"
+                                    y="0" width="34" height="36">
+                                    <path
+                                        d="M14.9027 1.19271C16.819 0.0863382 19.1799 0.0863377 21.0962 1.19271L31.0066 6.91444C32.9229 8.02081 34.1033 10.0655 34.1033 12.2782V23.7217C34.1033 25.9344 32.9229 27.9791 31.0066 29.0855L21.0962 34.8072C19.1799 35.9136 16.819 35.9136 14.9027 34.8072L4.99235 29.0855C3.07606 27.9791 1.89558 25.9344 1.89558 23.7217V12.2782C1.89558 10.0655 3.07606 8.02081 4.99235 6.91444L14.9027 1.19271Z"
+                                        fill="#83E1E1" />
+                                </mask>
+                                <g mask="url(#mask0_9477_1298)">
+                                    <path
+                                        d="M7.06987 14.0314L-3.55766 20.6564L-12.7647 26.8436C-13.1071 27.0737 -13.3125 27.4592 -13.3125 27.8717V57.2177C-13.3125 57.9018 -12.7579 58.4564 -12.0738 58.4564H49.2036C49.8877 58.4564 50.4423 57.9018 50.4423 57.2177V31.0056C50.4423 30.5813 50.2251 30.1865 49.8667 29.9593L18.8472 10.3004C18.3574 9.98998 17.7178 10.0609 17.3079 10.4711L11.9644 15.8188C11.4805 16.303 10.6957 16.303 10.2119 15.8188L8.60139 14.2071C8.19394 13.7993 7.55906 13.7265 7.06987 14.0314Z"
+                                        fill="url(#paint1_linear_9477_1298)" />
+                                    <path
+                                        d="M7.45467 16.875L1.125 21.975H5.97115C6.44588 21.975 8.21291 24.575 9.03709 25.875L10.125 19.775L7.45467 16.875Z"
+                                        fill="url(#paint2_linear_9477_1298)" />
+                                    <path
+                                        d="M14.6468 19.125L18 13.5L31.5 21.375L28.408 22.7465L20.8125 22.5L13.5 29.25L16.875 21.375L14.6468 19.125Z"
+                                        fill="url(#paint3_linear_9477_1298)" />
+                                </g>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_9477_1298" x1="17.9995" y1="-0.595215" x2="17.9995"
+                                    y2="36.5951" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#22AFFF" />
+                                    <stop offset="1" stop-color="#1D41FF" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_9477_1298" x1="18.5649" y1="9.76929" x2="18.5649"
+                                    y2="58.4564" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1B3573" />
+                                    <stop offset="1" stop-color="#131E39" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_9477_1298" x1="9.5625" y1="18" x2="-3.375" y2="37.125"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FCFCFD" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_9477_1298" x1="18.5625" y1="13.5" x2="30.375"
+                                    y2="56.25" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="#192E5F" />
+                                </linearGradient>
+                                <clipPath id="clip0_9477_1298">
+                                    <rect width="36" height="36" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p>fleet</p>
+                    </div>
+                    <select>
+                        <option selected value="">Travelers</option>
+                        <option value="">Businessmens</option>
+                        <option value="">For fun</option>
+                        <option value="">Test drive</option>
+                    </select>
+                </div>
+                <div class="navbar__second__part">
+                    <a href="#"><span>Support</span></a>
+                    <div class="language">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.00065 13.3334C10.9462 13.3334 13.334 10.9456 13.334 8.00004C13.334 5.05452 10.9462 2.66671 8.00065 2.66671C5.05513 2.66671 2.66732 5.05452 2.66732 8.00004C2.66732 10.9456 5.05513 13.3334 8.00065 13.3334ZM8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8.00004C14.6673 4.31814 11.6825 1.33337 8.00065 1.33337C4.31875 1.33337 1.33398 4.31814 1.33398 8.00004C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                fill="#777E91" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.1638 12.1178C9.65627 11.1329 9.99935 9.67888 9.99935 8.00004C9.99935 6.3212 9.65627 4.86722 9.1638 3.88228C8.63146 2.81759 8.14272 2.66671 7.99935 2.66671C7.85598 2.66671 7.36724 2.81759 6.8349 3.88228C6.34243 4.86722 5.99935 6.3212 5.99935 8.00004C5.99935 9.67888 6.34243 11.1329 6.8349 12.1178C7.36724 13.1825 7.85598 13.3334 7.99935 13.3334C8.14272 13.3334 8.63146 13.1825 9.1638 12.1178ZM7.99935 14.6667C9.8403 14.6667 11.3327 11.6819 11.3327 8.00004C11.3327 4.31814 9.8403 1.33337 7.99935 1.33337C6.1584 1.33337 4.66602 4.31814 4.66602 8.00004C4.66602 11.6819 6.1584 14.6667 7.99935 14.6667Z"
+                                fill="#777E91" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.6344 8.66671C14.6562 8.44744 14.6673 8.22504 14.6673 8.00004C14.6673 7.77504 14.6562 7.55264 14.6344 7.33337H1.3669C1.34513 7.55264 1.33398 7.77504 1.33398 8.00004C1.33398 8.22504 1.34513 8.44744 1.3669 8.66671H14.6344Z"
+                                fill="#777E91" />
+                        </svg>
+
+                        <a href=""><span>Language</span></a>
+                    </div>
+                    <button>List your property</button>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_9477_1289)">
+                            <path
+                                d="M21 18.0233C21 18.5113 20.6043 18.907 20.1163 18.907H3.88372C3.39565 18.907 3 18.5113 3 18.0233C3 17.5352 3.39566 17.1395 3.88372 17.1395H3.9V10.9809C3.9 6.57288 7.527 3 12 3C16.473 3 20.1 6.57288 20.1 10.9809V17.1395H20.1163C20.6043 17.1395 21 17.5352 21 18.0233ZM5.7 17.1395H18.3V10.9809C18.3 7.5494 15.4794 4.76744 12 4.76744C8.5206 4.76744 5.7 7.5494 5.7 10.9809V17.1395ZM9.97604 20.7558C9.73121 20.2608 10.1977 19.7907 10.75 19.7907H13.25C13.8023 19.7907 14.2688 20.2608 14.024 20.7558C13.9155 20.9751 13.7699 21.1773 13.591 21.3529C13.169 21.7672 12.5967 22 12 22C11.4033 22 10.831 21.7672 10.409 21.3529C10.2301 21.1773 10.0845 20.9751 9.97604 20.7558Z"
+                                fill="#777E91" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_9477_1289">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <img src="./assets/images/avatar.png" alt="">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero__wrapper">
+                <div class="image__wrapper">
+                    <img src="./assets/images/heroImage.png" alt="">
+                </div>
+                <div class="hero__content">
+                    <h1>Car rentals</h1>
+                    <p>Find and book a great experience.</p>
+                    <button>Start your search</button>
+                </div>
+            </div>
+        </section>
+        <section class="popular__destinations" , id="popular__destinations">
+            <div class="container popular__destinations__wrapper">
+                <h3>Popular destinations</h3>
+                <p>for car rentals</p>
+                <div class="items__wrapper">
+                    <div class="item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="item__body">
+                            <h3>Paris</h3>
+                            <p class="context">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="item__body">
+                            <h3>Paris</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="item__body">
+                            <h3>Paris</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="item__body">
+                            <h3>Paris</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="item__body">
+                            <h3>Paris</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="show__more__button">
+                    <p>Show more</p>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.5286 5.19526C6.26825 5.45561 6.26825 5.87772 6.5286 6.13807L8.39052 8L6.5286 9.86193C6.26825 10.1223 6.26825 10.5444 6.5286 10.8047C6.78895 11.0651 7.21106 11.0651 7.4714 10.8047L9.80474 8.4714C10.0651 8.21106 10.0651 7.78895 9.80474 7.5286L7.4714 5.19526C7.21106 4.93491 6.78895 4.93491 6.5286 5.19526Z"
+                            fill="#777E91" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="rent__app__note" id="rent__app__note">
+            <div class="container rent__app__wrapper">
+                <div class="rent__app__details">
+                    <p class="details__note">supercharge your planning powers</p>
+                    <h3 class="details__title">Rent a car in minutes with Fleet</h3>
+                    <p class="details__description">Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                    <form class="details__form" action="">
+                        <input type="text" placeholder="Enter your phone number">
+                        <button type="submit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#3B71FE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.0909 11.2652C18.4968 10.8906 19.1294 10.9159 19.504 11.3217L22.7348 14.8217C23.0884 15.2047 23.0884 15.7952 22.7348 16.1782L19.504 19.6783C19.1294 20.0841 18.4968 20.1094 18.091 19.7348C17.6851 19.3602 17.6598 18.7276 18.0344 18.3217L19.716 16.5L10 16.5C9.44771 16.5 9 16.0523 9 15.5C9 14.9477 9.44771 14.5 10 14.5L19.716 14.5L18.0344 12.6783C17.6598 12.2725 17.6851 11.6398 18.0909 11.2652Z"
+                                    fill="#FCFCFD" />
+                            </svg></button>
+                    </form>
+                </div>  
+                <img src="./assets/images/rentImage.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
