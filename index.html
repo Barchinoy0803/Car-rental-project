@@ -67,13 +67,12 @@
                     </div>
                     <select>
                         <option selected value="">Travelers</option>
-                        <option value="">Businessmens</option>
                         <option value="">For fun</option>
                         <option value="">Test drive</option>
                     </select>
                 </div>
                 <div class="navbar__second__part">
-                    <a href="#"><span>Support</span></a>
+                    <a class="support" href="#"><span>Support</span></a>
                     <div class="language">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -89,7 +88,7 @@
 
                         <a href=""><span>Language</span></a>
                     </div>
-                    <button>List your property</button>
+                    <button class="list__button">List your property</button>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_9477_1289)">
                             <path
@@ -103,16 +102,35 @@
                         </defs>
                     </svg>
                     <img src="./assets/images/avatar.png" alt="">
+                    <div class="hamburger__menu__wrapper">
+                        <button class="hamburger__menu">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.66634 10.6666C5.92996 10.6666 5.33301 11.2636 5.33301 12C5.33301 12.7363 5.92996 13.3333 6.66634 13.3333H25.333C26.0694 13.3333 26.6663 12.7363 26.6663 12C26.6663 11.2636 26.0694 10.6666 25.333 10.6666H6.66634Z"
+                                    fill="#777E91" />
+                                <path
+                                    d="M6.66634 18.6666C5.92996 18.6666 5.33301 19.2636 5.33301 20C5.33301 20.7363 5.92996 21.3333 6.66634 21.3333H25.333C26.0694 21.3333 26.6663 20.7363 26.6663 20C26.6663 19.2636 26.0694 18.6666 25.333 18.6666H6.66634Z"
+                                    fill="#777E91" />
+                            </svg>
+                        </button>
+
+                        <div class="menu__elements">
+                            <a href="#"><span>Travelers</span></a>
+                            <a href="#"><span>For fun</span></a>
+                            <a href="#"><span>Test drive</span></a>
+                            <a class="support" href="#"><span>Support</span></a>
+                            <a href="#"><span>Language</span></a>
+                            <a href="#"><span>List your property</span></a>
+                        </div>
+                    </div>
                 </div>
+
             </nav>
         </div>
     </header>
     <main>
         <section class="hero" id="hero">
             <div class="container hero__wrapper">
-                <div class="image__wrapper">
-                    <img src="./assets/images/heroImage.png" alt="">
-                </div>
                 <div class="hero__content">
                     <h1>Car rentals</h1>
                     <p>Find and book a great experience.</p>
@@ -133,23 +151,23 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./assets/images/image1.jpg" alt="">
+                        <img src="./assets/images/image2.jpg" alt="">
                         <div class="item__body">
-                            <h3>Paris</h3>
+                            <h3>London</h3>
                             <p>Car rentals in 86 pickup locations</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./assets/images/image1.jpg" alt="">
+                        <img src="./assets/images/image3.jpg" alt="">
                         <div class="item__body">
-                            <h3>Paris</h3>
+                            <h3>Ams</h3>
                             <p>Car rentals in 86 pickup locations</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./assets/images/image1.jpg" alt="">
+                        <img src="./assets/images/image4.jpg" alt="">
                         <div class="item__body">
-                            <h3>Paris</h3>
+                            <h3>Milan</h3>
                             <p>Car rentals in 86 pickup locations</p>
                         </div>
                     </div>
@@ -176,7 +194,8 @@
                 <div class="rent__app__details">
                     <p class="details__note">supercharge your planning powers</p>
                     <h3 class="details__title">Rent a car in minutes with Fleet</h3>
-                    <p class="details__description">Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                    <p class="details__description">Stacks is a production-ready library of stackable content blocks
+                        built in React Native.</p>
                     <form class="details__form" action="">
                         <input type="text" placeholder="Enter your phone number">
                         <button type="submit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -187,12 +206,91 @@
                                     fill="#FCFCFD" />
                             </svg></button>
                     </form>
-                </div>  
-                <img src="./assets/images/rentImage.png" alt="">
+                </div>
+                <img class="desktop__image" src="./assets/images/rentImage.png" alt="">
+                <img class="phone__image" src="./assets/images/imagePhone.png" alt="">
+            </div>
+        </section>
+        <section class="explore__nearby" id="explore__nearby">
+            <div class="container explore__nearby__wrapper">
+                <h3>Explore nearby</h3>
+                <p>for car rentals</p>
+                <div class="locations__wrapper">
+                    <div class="location__item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image2.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image3.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image4.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image2.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image3.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image4.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="location__item">
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <div class="location__item__content">
+                            <h4>London</h4>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="show__more__button">
+                    <p>Show more</p>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.5286 5.19526C6.26825 5.45561 6.26825 5.87772 6.5286 6.13807L8.39052 8L6.5286 9.86193C6.26825 10.1223 6.26825 10.5444 6.5286 10.8047C6.78895 11.0651 7.21106 11.0651 7.4714 10.8047L9.80474 8.4714C10.0651 8.21106 10.0651 7.78895 9.80474 7.5286L7.4714 5.19526C7.21106 4.93491 6.78895 4.93491 6.5286 5.19526Z"
+                            fill="#777E91" />
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <script src="./js/app.js"></script>
 </body>
-
 </html>

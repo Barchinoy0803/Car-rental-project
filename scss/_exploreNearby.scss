@@ -1,0 +1,84 @@
+.explore__nearby__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 99px;
+
+    h3 {
+        @extend %title;
+    };
+
+    p {
+        @extend %description;
+        font-weight: 400;
+    }
+
+    .show__more__button {
+        @extend %showMoreButton;
+
+        p {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .locations__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        width: 100%;
+        margin-block: 48px;
+
+        .location__item {
+            width: 352px;
+            height: 100%;
+
+            img {
+                border-radius: 24px;
+                height: 265px;
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    @extend %description;
+                    color: $text-color-secondary
+                }
+
+                p {
+                    @extend %content__description
+                }
+            }
+        }
+
+        ;
+
+    }
+}
+
+@media (max-width:1155px) {
+    .explore__nearby__wrapper .locations__wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore__nearby__wrapper .locations__wrapper .location__item {
+        width: 300px;
+    }
+
+    .explore__nearby__wrapper {
+        align-items: center;
+    }
+}
+
+@media (max-width:996px) {
+    .explore__nearby__wrapper .locations__wrapper {
+        gap: 15px;
+    }
+
+    .explore__nearby__wrapper .locations__wrapper .location__item {
+        width: calc(100% - 30px) / 2
+    }
+
+}

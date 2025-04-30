@@ -43,14 +43,12 @@ textarea {
     border: none;
 }
 
-body{
-    height: 500vh;
-}
 %title {
     font-family: $font-DMSans;
     font-weight: 700;
     font-size: 48px;
 };
+
 
 %description {
     font-family: $font-Poppins;
@@ -59,3 +57,24 @@ body{
     letter-spacing: -1%;
     color: $text-color-primary;
 };
+
+
+
+%content__description {
+    font-family: $font-Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+%showMoreButton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: max-content;
+    padding: 16px 21px 16px 24px;
+    border-radius: 90px;
+    background: transparent;
+    border: 1px solid $text-color-primary;
+    margin-bottom: 136px;
+}

@@ -8,18 +8,10 @@
 
     p {
         @extend %description
-    }
+    };
     
     .show__more__button{
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        width: max-content;
-        padding: 16px 21px 16px 24px;
-        border-radius: 90px;
-        background: transparent;
-        border: 1px solid $text-color-primary;
-        margin-bottom: 136px;
+        @extend %showMoreButton;
 
         p{
             font-size: 16px;
@@ -56,10 +48,7 @@
                 };
 
                 p{
-                    font-family: $font-Poppins;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 20px;
+                    @extend %content__description
                 }
             }
         }

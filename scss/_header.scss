@@ -51,5 +51,63 @@
             align-items: center;
             gap: 12px;
         }
+
+        .hamburger__menu__wrapper{
+            position: relative;
+            display: none;
+
+            .hamburger__menu{
+                border: none;
+            }
+
+            .menu__elements{
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .show__ham__menu{
+                background-color: rgb(236, 233, 233);
+                padding: 20px 35px;
+                width: max-content;
+                top: 70px;
+                right: -20px;
+                position: absolute;
+                display: flex;
+                border-radius: 20px;
+            }
+        }
     }
 }
+
+
+@media (max-width:1125px) {
+    .header__navbar .navbar__second__part .language, .support{
+        display: none;
+    }
+};
+
+@media (max-width:900px) {
+    .header__navbar {
+        padding-inline: 40px;
+        padding-block: 15px;
+    }
+    .header__navbar .navbar__second__part .list__button{
+        display: none;
+    }
+
+    .header__navbar .navbar__first__part select{
+        display: none;
+    }
+
+    .header__navbar .navbar__second__part .hamburger__menu__wrapper{
+        display: block;
+    }
+}
+
+@media (max-width:505px) {
+    .header__navbar {
+        padding-inline: 15px;
+        padding-block: 10px;
+    }
+};
